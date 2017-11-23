@@ -16,17 +16,21 @@ public class Settings {
     private String shortcut;
 
     private String programPath;
-    private static final String SETTINGS_FILE = "settings.t";
-    private static final String LANGUAGES_FILE = "langs.t";
+    private static final String SETTINGS_FILE = "./settings.t";
+    private static final String LANGUAGES_FILE = "./langs.t";
 
     private Map<String, String> languages;
 
     public Settings() {
 
+        //TODO see if it works in windows
+
         //this line gets the path where this class was loaded
         // its the same thing as the path for the whole program
         programPath = this.getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
         programPath = programPath.substring(1, programPath.lastIndexOf('/')+1);
+
+        programPath = "";
 
         languages = new LinkedHashMap<>();
         initLanguages();
@@ -54,18 +58,21 @@ public class Settings {
         } catch (FileNotFoundException e) {
             //default settings
 
-            boolean isExist = Advapi32Util.registryValueExists(
-                    WinReg.HKEY_CURRENT_USER,
-                    "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
-                    Display.APPLICATION_NAME
-            );
+            if (System.getProperty("os.name").startsWith("Windows")) {
 
-            if (isExist)  {
-                Advapi32Util.registryDeleteValue(
+                boolean isExist = Advapi32Util.registryValueExists(
                         WinReg.HKEY_CURRENT_USER,
                         "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
                         Display.APPLICATION_NAME
                 );
+
+                if (isExist) {
+                    Advapi32Util.registryDeleteValue(
+                            WinReg.HKEY_CURRENT_USER,
+                            "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            Display.APPLICATION_NAME
+                    );
+                }
             }
 
             openOnStartup = false;
