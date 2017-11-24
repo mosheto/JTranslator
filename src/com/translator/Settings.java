@@ -15,23 +15,12 @@ public class Settings {
     private String src, to;
     private String shortcut;
 
-    private String programPath;
     private static final String SETTINGS_FILE = "./settings.t";
     private static final String LANGUAGES_FILE = "./langs.t";
 
     private Map<String, String> languages;
 
     public Settings() {
-
-        //TODO see if it works in windows
-
-        //this line gets the path where this class was loaded
-        // its the same thing as the path for the whole program
-        programPath = this.getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
-        programPath = programPath.substring(1, programPath.lastIndexOf('/')+1);
-
-        programPath = "";
-
         languages = new LinkedHashMap<>();
         initLanguages();
         getSettings();
@@ -41,7 +30,7 @@ public class Settings {
     private void getSettings() {
 
         try {
-            BufferedReader br = new BufferedReader(new FileReader(programPath + SETTINGS_FILE));
+            BufferedReader br = new BufferedReader(new FileReader(SETTINGS_FILE));
 
             br.readLine(); //get heading not needed
             StringTokenizer st = new StringTokenizer(br.readLine());
@@ -49,41 +38,30 @@ public class Settings {
             openOnStartup = st.nextToken().equals("on");
             src = st.nextToken();
             to = st.nextToken();
-
             shortcut = st.nextToken();
             firstTime = false;
 
             br.close();
 
         } catch (FileNotFoundException e) {
-            //default settings
 
-            if (System.getProperty("os.name").startsWith("Windows")) {
+            // if settings file not found
+            // then get the default settings
 
-                boolean isExist = Advapi32Util.registryValueExists(
-                        WinReg.HKEY_CURRENT_USER,
-                        "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
-                        Display.APPLICATION_NAME
-                );
+            //delete previous registry value if it exist
+            deleteRegValue(Display.APPLICATION_NAME);
 
-                if (isExist) {
-                    Advapi32Util.registryDeleteValue(
-                            WinReg.HKEY_CURRENT_USER,
-                            "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
-                            Display.APPLICATION_NAME
-                    );
-                }
-            }
-
+            // default settings
             openOnStartup = false;
-
             src = "English";
             to = "Arabic";
-            shortcut = "ctrl+T"; // default shortcut
+            shortcut = "ctrl+T";
 
-            //if the settings file not found
-            //then this is the first time the user
-            //open the program
+            // if the settings file not found
+            // then this is the first time the user
+            // open the program
+            // this used to show the application
+            // so that the user edit it
             firstTime = true;
 
             saveSettings();
@@ -94,13 +72,14 @@ public class Settings {
         }
     }
 
+
     public void saveSettings() {
         String heading = String.format("%-10s%-15s%-15s%s", "Startup", "src", "to", "shortcut");
         String options = String.format("%-10s%-15s%-15s%s", openOnStartup ? "on" : "off", src,  to, shortcut);
 
         try {
 
-            BufferedWriter bw = new BufferedWriter(new FileWriter(programPath + SETTINGS_FILE));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(SETTINGS_FILE));
 
             bw.write(heading);
             bw.newLine();
@@ -118,7 +97,7 @@ public class Settings {
 
         try {
 
-            BufferedReader br = new BufferedReader(new FileReader(programPath + LANGUAGES_FILE));
+            BufferedReader br = new BufferedReader(new FileReader(LANGUAGES_FILE));
 
             String line;
             StringTokenizer tk;
@@ -156,28 +135,53 @@ public class Settings {
         if (System.getProperty("os.name").startsWith("Windows")) {
 
             //add a registry value to open the application on startup
-            if (this.openOnStartup == false && openOnStartup == true) {
+            if (openOnStartup) {
 
-                String appPath = "\"" + programPath.replaceAll("/", "\\\\") + "Translator.jar\"";
+                //this line gets the path where this class was loaded
+                // its the same thing as the path for the whole program
+                String programPath = this.getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
 
-                Advapi32Util.registrySetStringValue(WinReg.HKEY_CURRENT_USER,
-                        "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
-                        Display.APPLICATION_NAME,
-                        appPath
-                );
+                programPath = programPath.substring(1, programPath.length());
+                programPath = "\"" + programPath.replaceAll("/", "\\\\") + "\"";
 
-                //delete the registry value so it doesn't open the application on start up
-            } else if (this.openOnStartup == true && openOnStartup == false) {
+                setRegValue(Display.APPLICATION_NAME, programPath);
 
-                Advapi32Util.registryDeleteValue(
-                        WinReg.HKEY_CURRENT_USER,
-                        "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
-                        Display.APPLICATION_NAME
-                );
+            //delete the registry value so it doesn't open the application on start up
+            } else {
+                deleteRegValue(Display.APPLICATION_NAME);
+                System.out.println("Deleted registry value.");
             }
 
-            this.openOnStartup = openOnStartup;
         }
+
+        this.openOnStartup = openOnStartup;
+    }
+
+    // Windows related function
+    private void setRegValue(String name, String value) {
+         Advapi32Util.registrySetStringValue(WinReg.HKEY_CURRENT_USER,
+                "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+                name,
+                value
+        );
+    }
+
+    // Windows related function
+    private void deleteRegValue(String name) {
+
+        boolean isValueExist = Advapi32Util.registryValueExists(
+                WinReg.HKEY_CURRENT_USER,
+                "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+                name);
+
+        //there is nothing to delete
+        if (!isValueExist) return;
+
+        Advapi32Util.registryDeleteValue(
+                WinReg.HKEY_CURRENT_USER,
+                "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+                name
+        );
     }
 
     public boolean isOpenOnStartup() {
