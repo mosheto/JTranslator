@@ -15,22 +15,42 @@ public class Settings {
     private String src, to;
     private String shortcut;
 
-    private static final String SETTINGS_FILE = "./settings.t";
-    private static final String LANGUAGES_FILE = "./langs.t";
+    private static final String SETTINGS_FILE = "settings.t";
+    private static final String LANGUAGES_FILE = "langs.t";
+
+    private String programPath;
 
     private Map<String, String> languages;
 
     public Settings() {
         languages = new LinkedHashMap<>();
+        initProgramPath();
         initLanguages();
         getSettings();
+    }
+
+    private void initProgramPath() {
+
+        //this line gets the path where this class was loaded
+        // its the same thing as the path for the whole program
+        programPath = this.getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
+
+        String OSName = System.getProperty("os.name");
+
+        if (OSName.startsWith("Windows")) {
+
+            programPath = programPath.substring(1, programPath.lastIndexOf('/')+1);
+            programPath = programPath.replaceAll("/", "\\\\");
+        }
+
+        System.out.println(programPath);
     }
 
     //get the settings from the a file
     private void getSettings() {
 
         try {
-            BufferedReader br = new BufferedReader(new FileReader(SETTINGS_FILE));
+            BufferedReader br = new BufferedReader(new FileReader(programPath + SETTINGS_FILE));
 
             br.readLine(); //get heading not needed
             StringTokenizer st = new StringTokenizer(br.readLine());
@@ -79,7 +99,7 @@ public class Settings {
 
         try {
 
-            BufferedWriter bw = new BufferedWriter(new FileWriter(SETTINGS_FILE));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(programPath + SETTINGS_FILE));
 
             bw.write(heading);
             bw.newLine();
@@ -97,7 +117,7 @@ public class Settings {
 
         try {
 
-            BufferedReader br = new BufferedReader(new FileReader(LANGUAGES_FILE));
+            BufferedReader br = new BufferedReader(new FileReader(programPath + LANGUAGES_FILE));
 
             String line;
             StringTokenizer tk;
@@ -136,14 +156,6 @@ public class Settings {
 
             //add a registry value to open the application on startup
             if (openOnStartup) {
-
-                //this line gets the path where this class was loaded
-                // its the same thing as the path for the whole program
-                String programPath = this.getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
-
-                programPath = programPath.substring(1, programPath.length());
-                programPath = "\"" + programPath.replaceAll("/", "\\\\") + "\"";
-
                 setRegValue(Display.APPLICATION_NAME, programPath);
 
             //delete the registry value so it doesn't open the application on start up
