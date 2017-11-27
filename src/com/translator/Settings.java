@@ -6,6 +6,8 @@ import com.sun.jna.platform.win32.WinReg;
 import javax.swing.*;
 import java.io.*;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.*;
 
 public class Settings {
@@ -72,8 +74,12 @@ public class Settings {
             // if settings file not found
             // then get the default settings
 
-            //delete previous registry value if it exist
-            deleteRegValue(Display.APPLICATION_NAME);
+            if (System.getProperty("os.name").startsWith("Windows")) {
+                //delete previous registry value if it exist
+                deleteRegValue(Display.APPLICATION_NAME);
+            } else if (System.getProperty("os.name").startsWith("Linux")) {
+                deleteStartupFile();
+            }
 
             // default settings
             openOnStartup = false;
@@ -154,7 +160,6 @@ public class Settings {
     }
 
 
-    //TODO implement startup for linux
     public void setOpenOnStartup(boolean openOnStartup) {
 
 
@@ -172,10 +177,55 @@ public class Settings {
                 deleteRegValue(Display.APPLICATION_NAME);
                 System.out.println("Deleted registry value.");
             }
+        } else if (System.getProperty("os.name").startsWith("Linux")) {
+
+            if (openOnStartup) {
+                addStartupFile();
+            } else {
+                deleteStartupFile();
+            }
         }
 
         this.openOnStartup = openOnStartup;
     }
+
+    private void deleteStartupFile() {
+
+        String path = System.getProperty("user.home") + "/.config/autostart/" + Display.APPLICATION_NAME + ".desktop";
+
+        File startupFile = new File(path);
+
+        try {
+            Files.deleteIfExists(startupFile.toPath());
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void addStartupFile() {
+
+        String path = System.getProperty("user.home") + "/.config/autostart/" + Display.APPLICATION_NAME + ".desktop";
+
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))) {
+
+            bw.write("[Desktop Entry]");
+            bw.newLine();
+            bw.write("Type=Application");
+            bw.newLine();
+            bw.write("Exec=java -jar " + programPath + programName);
+            bw.newLine();
+            bw.write("Name=Translator");
+            bw.newLine();
+            bw.write("Comment=translator");
+            bw.close();
+
+        } catch (IOException e){
+            System.out.println("Something went wrong while writing Translator.desktop");
+            e.printStackTrace();
+        }
+    }
+
 
     // Windows related function
     private void setRegValue(String name, String value) {
