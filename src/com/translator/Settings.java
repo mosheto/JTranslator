@@ -18,31 +18,35 @@ public class Settings {
     private static final String SETTINGS_FILE = "settings.t";
     private static final String LANGUAGES_FILE = "langs.t";
 
+    //name and path of the jar file
+    private String programName;
     private String programPath;
 
     private Map<String, String> languages;
 
     public Settings() {
-        languages = new LinkedHashMap<>();
-        initProgramPath();
+        initProgramPathAndName();
         initLanguages();
         getSettings();
     }
 
-    private void initProgramPath() {
+    private void initProgramPathAndName() {
 
         //this line gets the path where this class was loaded
         // its the same thing as the path for the whole program
         programPath = this.getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
+        programName = programPath.substring(programPath.lastIndexOf('/')+1);
 
-        String OSName = System.getProperty("os.name");
-
-        if (OSName.startsWith("Windows")) {
-
+        if (System.getProperty("os.name").startsWith("Windows")) {
             programPath = programPath.substring(1, programPath.lastIndexOf('/')+1);
             programPath = programPath.replaceAll("/", "\\\\");
+
+        } else if (System.getProperty("os.name").startsWith("Linux")) {
+            programPath = programPath.substring(0, programPath.lastIndexOf('/')+1);
         }
 
+        System.out.println("Program path and name");
+        System.out.println(programName);
         System.out.println(programPath);
     }
 
@@ -115,6 +119,8 @@ public class Settings {
     //build languages map from a file
     private void initLanguages() {
 
+        languages = new LinkedHashMap<>();
+
         try {
 
             BufferedReader br = new BufferedReader(new FileReader(programPath + LANGUAGES_FILE));
@@ -156,14 +162,16 @@ public class Settings {
 
             //add a registry value to open the application on startup
             if (openOnStartup) {
-                setRegValue(Display.APPLICATION_NAME, programPath);
+
+                String val = "\"" + programPath + programName + "\"";
+
+                setRegValue(Display.APPLICATION_NAME, val);
 
             //delete the registry value so it doesn't open the application on start up
             } else {
                 deleteRegValue(Display.APPLICATION_NAME);
                 System.out.println("Deleted registry value.");
             }
-
         }
 
         this.openOnStartup = openOnStartup;
