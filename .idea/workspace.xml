@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1ee56f8-e0ce-461b-9b26-39bdf3de3818" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Translator_jar/Translator.jar" afterPath="$PROJECT_DIR$/out/artifacts/Translator_jar/Translator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/MainFunctionality.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/MainFunctionality.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/Message.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/Message.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/Translator.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/Translator.class" />
+    <list default="true" id="f1ee56f8-e0ce-461b-9b26-39bdf3de3818" name="Default" comment="modify About Panel">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/MouseManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/about.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/back.gif" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/translator/MainFunctionality.java" afterPath="$PROJECT_DIR$/src/com/translator/MainFunctionality.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/translator/Message.java" afterPath="$PROJECT_DIR$/src/com/translator/Message.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/translator/Translator.java" afterPath="$PROJECT_DIR$/src/com/translator/Translator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/translator/About.java" afterPath="$PROJECT_DIR$/src/com/translator/About.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/translator/SettingsGUI.java" afterPath="$PROJECT_DIR$/src/com/translator/SettingsGUI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,30 +26,55 @@
     </SUITE>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainFunctionality.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/translator/MainFunctionality.java">
+    <leaf>
+      <file leaf-file-name="About.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/translator/About.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+            <state relative-caret-position="646">
+              <caret line="140" column="27" lean-forward="true" selection-start-line="140" selection-start-column="27" selection-end-line="140" selection-end-column="27" />
               <folding>
-                <element signature="method#MainFunctionality#0;class#MainFunctionality#0" expanded="false" />
-                <element signature="method#getClipboardContents#0;class#MainFunctionality#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#initComponents#0;class#About#0" expanded="false" />
+                <element signature="e#643#673#0" expanded="true" />
+                <element signature="e#1862#1863#0" expanded="true" />
+                <element signature="e#1910#1911#0" expanded="true" />
+                <element signature="e#2153#2286#0" expanded="true" />
+                <element signature="e#2285#2286#0" expanded="true" />
+                <element signature="e#5803#5804#0" expanded="true" />
+                <element signature="e#5858#5859#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Message.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/translator/Message.java">
+      <file leaf-file-name="SettingsGUI.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/translator/SettingsGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="-433">
+              <caret line="45" column="57" lean-forward="true" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
               <folding>
-                <element signature="method#Message#0;class#Message#0" expanded="false" />
-                <element signature="method#setText#0;class#Message#0" expanded="false" />
-                <element signature="method#getTextWidth#0;class#Message#0" expanded="false" />
+                <element signature="method#getKeyText#0;class#SettingsGUI#0" expanded="false" />
+                <element signature="docComment;method#initComponents#0;class#SettingsGUI#0" expanded="false" />
+                <element signature="e#2646#2676#0" expanded="true" />
+                <element signature="method#onSaveClicked#0;class#SettingsGUI#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="t.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/t.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Display.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/translator/Display.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,18 +105,19 @@
         <option value="$PROJECT_DIR$/resources/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/out/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/libs/jkeymaster-1.2.jar!/com/tulskiy/keymaster/common/Provider.class" />
-        <option value="$PROJECT_DIR$/src/com/translator/About.java" />
         <option value="$USER_HOME$/Documents/NetBeansProjects/ADialog/src/TranslatorStuff/SettingsGUI.java" />
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$DIa1468.14187/KeyEventDemo.java" />
         <option value="$PROJECT_DIR$/libs/jkeymaster-1.2.jar!/com/tulskiy/keymaster/windows/KeyMap.class" />
-        <option value="$PROJECT_DIR$/src/com/translator/SettingsGUI.java" />
         <option value="$PROJECT_DIR$/src/com/translator/Display.java" />
         <option value="$PROJECT_DIR$/settings.t" />
         <option value="$PROJECT_DIR$/out/production/Translator/settings.t" />
-        <option value="$PROJECT_DIR$/src/com/translator/Settings.java" />
         <option value="$PROJECT_DIR$/src/com/translator/Translator.java" />
         <option value="$PROJECT_DIR$/src/com/translator/MainFunctionality.java" />
         <option value="$PROJECT_DIR$/src/com/translator/Message.java" />
+        <option value="$PROJECT_DIR$/src/com/translator/Settings.java" />
+        <option value="$PROJECT_DIR$/src/com/translator/About.java" />
+        <option value="$USER_HOME$/Documents/NetBeansProjects/ADialog/src/TranslatorStuff/About.java" />
+        <option value="$PROJECT_DIR$/src/com/translator/SettingsGUI.java" />
       </list>
     </option>
   </component>
@@ -118,15 +142,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
               <item name="Translator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Translator" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
@@ -143,7 +171,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,27 +380,44 @@
       <option name="project" value="LOCAL" />
       <updated>1511931302377</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="improve Message Box">
+      <created>1511935054300</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1511935054300</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.25052854" sideWeight="0.50208336" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17758985" sideWeight="0.49791667" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15856236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.49791667" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1689546" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1515625" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -379,31 +425,11 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.25052854" sideWeight="0.50208336" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.250264" sideWeight="0.49791667" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1689546" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15180983" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -412,7 +438,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="path issue with linux" />
     <MESSAGE value="Cleanup code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup code" />
+    <MESSAGE value="improve Message Box" />
+    <MESSAGE value="modify About Panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify About Panel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -421,33 +449,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/translator/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/translator/Launcher.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/translator/MainFunctionality.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="29" column="51" lean-forward="false" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
-          <folding>
-            <element signature="method#MainFunctionality#0;class#MainFunctionality#0" expanded="false" />
-            <element signature="method#getClipboardContents#0;class#MainFunctionality#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/translator/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/translator/TranslateManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -460,8 +461,8 @@
         <state relative-caret-position="456">
           <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#Translator#0;class#Translator#0" expanded="false" />
+            <element signature="method#init#0;class#Translator#0" expanded="false" />
             <element signature="method#showTray#0;class#Translator#0" expanded="false" />
             <element signature="method#loadImage#0;class#Translator#0" expanded="false" />
             <element signature="method#onClosing#0;class#Translator#0" expanded="false" />
@@ -547,13 +548,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/awt/event/KeyEvent.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/translator/About.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="150" column="31" lean-forward="false" selection-start-line="150" selection-start-column="31" selection-end-line="150" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/awt/AWTKeyStroke.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/KeyStroke.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/awt/event/WindowAdapter.java" />
@@ -579,25 +573,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/io/FileReader.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/translator/SettingsGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#onSaveClicked#0;class#SettingsGUI#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/translator/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/libs/jna-platform-4.2.1.jar!/com/sun/jna/platform/win32/Advapi32Util.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -657,8 +632,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/translator/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
+        <state relative-caret-position="893">
+          <caret line="236" column="5" lean-forward="true" selection-start-line="236" selection-start-column="5" selection-end-line="236" selection-end-column="5" />
           <folding>
             <element signature="method#Settings#0;class#Settings#0" expanded="false" />
             <element signature="method#initProgramPathAndName#0;class#Settings#0" expanded="false" />
@@ -668,10 +643,30 @@
             <element signature="method#initLanguages#0;class#Settings#0" expanded="false" />
             <element signature="method#setOpenOnStartup#0;class#Settings#0" expanded="false" />
             <element signature="method#deleteStartupFile#0;class#Settings#0" expanded="false" />
-            <element signature="method#addStartupFile#0;class#Settings#0" expanded="false" />
-            <element signature="method#setRegValue#0;class#Settings#0" expanded="false" />
-            <element signature="method#deleteRegValue#0;class#Settings#0" expanded="false" />
-            <element signature="method#getLanguages#0;class#Settings#0" expanded="false" />
+            <marker date="1511935519770" expanded="false" signature="6363:7122" ph="{...}" />
+            <marker date="1511935519770" expanded="false" signature="7259:7461" ph="{...}" />
+            <marker date="1511935519770" expanded="false" signature="7560:8026" ph="{...}" />
+            <marker date="1511935519770" expanded="false" signature="8064:8075" ph=" { " />
+            <marker date="1511935519770" expanded="false" signature="8096:8102" ph=" }" />
+            <marker date="1511935519770" expanded="false" signature="8136:8147" ph=" { " />
+            <marker date="1511935519770" expanded="false" signature="8164:8170" ph=" }" />
+            <marker date="1511935519770" expanded="false" signature="8204:8215" ph=" { " />
+            <marker date="1511935519770" expanded="false" signature="8231:8237" ph=" }" />
+            <marker date="1511935519770" expanded="false" signature="8283:8294" ph=" { " />
+            <marker date="1511935519770" expanded="false" signature="8319:8325" ph=" }" />
+            <marker date="1511935519770" expanded="false" signature="8362:8373" ph=" { " />
+            <marker date="1511935519770" expanded="false" signature="8388:8394" ph=" }" />
+            <marker date="1511935519770" expanded="false" signature="8422:8433" ph=" { " />
+            <marker date="1511935519770" expanded="false" signature="8444:8450" ph=" }" />
+            <marker date="1511935519770" expanded="false" signature="8485:8496" ph=" { " />
+            <marker date="1511935519770" expanded="false" signature="8522:8528" ph=" }" />
+            <marker date="1511935519770" expanded="false" signature="8563:8574" ph=" { " />
+            <marker date="1511935519770" expanded="false" signature="8587:8593" ph=" }" />
+            <marker date="1511935519770" expanded="false" signature="8620:8631" ph=" { " />
+            <marker date="1511935519770" expanded="false" signature="8641:8647" ph=" }" />
+            <marker date="1511935519770" expanded="false" signature="8681:8692" ph=" { " />
+            <marker date="1511935519770" expanded="false" signature="8717:8722" ph=" }" />
+            <marker date="1511935519770" expanded="false" signature="8760:8886" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -695,6 +690,68 @@
             <element signature="method#Message#0;class#Message#0" expanded="false" />
             <element signature="method#setText#0;class#Message#0" expanded="false" />
             <element signature="method#getTextWidth#0;class#Message#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/about.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/translator/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/NetBeansProjects/ADialog/src/TranslatorStuff/About.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="142" column="42" lean-forward="false" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/t.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/back.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/translator/About.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="140" column="27" lean-forward="true" selection-start-line="140" selection-start-column="27" selection-end-line="140" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#initComponents#0;class#About#0" expanded="false" />
+            <element signature="e#643#673#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
+            <element signature="e#1910#1911#0" expanded="true" />
+            <element signature="e#2153#2286#0" expanded="true" />
+            <element signature="e#2285#2286#0" expanded="true" />
+            <element signature="e#5803#5804#0" expanded="true" />
+            <element signature="e#5858#5859#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/translator/SettingsGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-433">
+          <caret line="45" column="57" lean-forward="true" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+          <folding>
+            <element signature="method#getKeyText#0;class#SettingsGUI#0" expanded="false" />
+            <element signature="docComment;method#initComponents#0;class#SettingsGUI#0" expanded="false" />
+            <element signature="e#2646#2676#0" expanded="true" />
+            <element signature="method#onSaveClicked#0;class#SettingsGUI#0" expanded="false" />
           </folding>
         </state>
       </provider>

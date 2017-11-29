@@ -31,8 +31,6 @@ public class SettingsGUI extends javax.swing.JPanel  {
         this.settings = settings;
         this.translator = translator;
 
-
-
         initComponents();
         initByHand();
     }
