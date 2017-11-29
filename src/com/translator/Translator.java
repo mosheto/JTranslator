@@ -145,9 +145,11 @@ public class Translator {
     //to stop the application probably
     private void stop() {
 
+        //stop listening on the keyboard
         p.reset();
         p.stop();
 
+        //remove the tray properly
         if(SystemTray.isSupported())
             systemTray.remove(trayIcon);
 

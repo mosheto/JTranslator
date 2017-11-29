@@ -49,8 +49,8 @@ public class MainFunctionality implements HotKeyListener{
             return;
         }
 
-        message.setText(translation);
         message.setOrientation(translateManager.getDir());
+        message.setText(translation);
         message.pack();
         message.setVisible(true);
     }
