@@ -37,22 +37,20 @@ public class Settings {
         //this line gets the path where this class was loaded
         // its the same thing as the path for the whole program
         programPath = this.getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
-        programName = programPath.substring(programPath.lastIndexOf('/')+1);
+        programName = programPath.substring(programPath.lastIndexOf('/')+1); // it's like name.jar
 
+        //this is for Windows looks like C://path/to/program/
         if (System.getProperty("os.name").startsWith("Windows")) {
             programPath = programPath.substring(1, programPath.lastIndexOf('/')+1);
             programPath = programPath.replaceAll("/", "\\\\");
 
+            //this is for Linux looks like /path/to/program/
         } else if (System.getProperty("os.name").startsWith("Linux")) {
             programPath = programPath.substring(0, programPath.lastIndexOf('/')+1);
         }
-
-        System.out.println("Program path and name");
-        System.out.println(programName);
-        System.out.println(programPath);
     }
 
-    //get the settings from the a file
+    //get the settings from the file
     private void getSettings() {
 
         try {
@@ -73,19 +71,7 @@ public class Settings {
 
             // if settings file not found
             // then get the default settings
-
-            if (System.getProperty("os.name").startsWith("Windows")) {
-                //delete previous registry value if it exist
-                deleteRegValue(Display.APPLICATION_NAME);
-            } else if (System.getProperty("os.name").startsWith("Linux")) {
-                deleteStartupFile();
-            }
-
-            // default settings
-            openOnStartup = false;
-            src = "English";
-            to = "Arabic";
-            shortcut = "ctrl+T";
+            defaultSettings();
 
             // if the settings file not found
             // then this is the first time the user
@@ -100,6 +86,23 @@ public class Settings {
             System.out.println("Error retrieving the settings");
             e.printStackTrace();
         }
+    }
+
+    private void defaultSettings() {
+
+        //delete any registry value or startup file if exist from previous version
+        if (System.getProperty("os.name").startsWith("Windows")) {
+            //delete previous registry value if it exist
+            deleteRegValue(Display.APPLICATION_NAME);
+        } else if (System.getProperty("os.name").startsWith("Linux")) {
+            deleteStartupFile();
+        }
+
+        // default settings
+        openOnStartup = false;
+        src = "English";
+        to = "Arabic";
+        shortcut = "ctrl+T";
     }
 
 
@@ -155,10 +158,6 @@ public class Settings {
 
     //SETTERS ANS GETTERS
 
-    public boolean isFirstTime() {
-        return firstTime;
-    }
-
 
     public void setOpenOnStartup(boolean openOnStartup) {
 
@@ -177,6 +176,7 @@ public class Settings {
                 deleteRegValue(Display.APPLICATION_NAME);
                 System.out.println("Deleted registry value.");
             }
+
         } else if (System.getProperty("os.name").startsWith("Linux")) {
 
             if (openOnStartup) {
@@ -189,20 +189,21 @@ public class Settings {
         this.openOnStartup = openOnStartup;
     }
 
+    //Linux related function
     private void deleteStartupFile() {
 
         String path = System.getProperty("user.home") + "/.config/autostart/" + Display.APPLICATION_NAME + ".desktop";
-
         File startupFile = new File(path);
 
         try {
             Files.deleteIfExists(startupFile.toPath());
-
         } catch (IOException e) {
+            System.out.println("Something went wrong when trying to delete startup file");
             e.printStackTrace();
         }
     }
 
+    //Linux related function
     private void addStartupFile() {
 
         String path = System.getProperty("user.home") + "/.config/autostart/" + Display.APPLICATION_NAME + ".desktop";
@@ -221,13 +222,12 @@ public class Settings {
             bw.close();
 
         } catch (IOException e){
-            System.out.println("Something went wrong while writing Translator.desktop");
+            System.out.println("Something went wrong while writing " + Display.APPLICATION_NAME + ".desktop");
             e.printStackTrace();
         }
     }
 
-
-    // Windows related function
+    // Windows related function to write value to start the program on startup
     private void setRegValue(String name, String value) {
          Advapi32Util.registrySetStringValue(WinReg.HKEY_CURRENT_USER,
                 "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
@@ -236,7 +236,7 @@ public class Settings {
         );
     }
 
-    // Windows related function
+    // Windows related function to delete the value
     private void deleteRegValue(String name) {
 
         boolean isValueExist = Advapi32Util.registryValueExists(
@@ -256,6 +256,10 @@ public class Settings {
 
     public boolean isOpenOnStartup() {
         return openOnStartup;
+    }
+
+    public boolean isFirstTime() {
+        return firstTime;
     }
 
 

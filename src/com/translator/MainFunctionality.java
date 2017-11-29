@@ -17,21 +17,30 @@ public class MainFunctionality implements HotKeyListener{
     private TranslateManager translateManager;
     private Settings settings;
 
+    //previous clipboard content;
+    private String prevClipContent;
+
     public MainFunctionality(TranslateManager translateManager, Settings settings) {
         this.settings = settings;
         this.translateManager = translateManager;
         this.message = new Message();
+        this.prevClipContent = "";
     }
 
     @Override
     public void onHotKey(HotKey hotKey) {
 
-        if (message.isVisible()) return;
+        String clipboardContents = getClipboardContents().trim();
+
+        //to protect from multiple shortcut presses
+        if (message.isVisible() && prevClipContent.equals(clipboardContents)) return;
+
+        prevClipContent = clipboardContents;
 
         String translation = translateManager.translate(
                 settings.getEncodedSrc(),
                 settings.getEncodedTo(),
-                getClipboardContents()
+                clipboardContents
         );
 
         if (translation == null){
