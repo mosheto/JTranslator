@@ -53,8 +53,7 @@ public class Settings {
     //get the settings from the file
     private void getSettings() {
 
-        try {
-            BufferedReader br = new BufferedReader(new FileReader(programPath + SETTINGS_FILE));
+        try(BufferedReader br = new BufferedReader(new FileReader(programPath + SETTINGS_FILE))){
 
             br.readLine(); //get heading not needed
             StringTokenizer st = new StringTokenizer(br.readLine());
@@ -64,8 +63,6 @@ public class Settings {
             to = st.nextToken();
             shortcut = st.nextToken();
             firstTime = false;
-
-            br.close();
 
         } catch (FileNotFoundException e) {
 
@@ -110,14 +107,11 @@ public class Settings {
         String heading = String.format("%-10s%-15s%-15s%s", "Startup", "src", "to", "shortcut");
         String options = String.format("%-10s%-15s%-15s%s", openOnStartup ? "on" : "off", src,  to, shortcut);
 
-        try {
-
-            BufferedWriter bw = new BufferedWriter(new FileWriter(programPath + SETTINGS_FILE));
+        try(BufferedWriter bw = new BufferedWriter(new FileWriter(programPath + SETTINGS_FILE))){
 
             bw.write(heading);
             bw.newLine();
             bw.write(options);
-            bw.close();
 
         } catch (IOException e) {
             System.out.println("Error while saving the settings");
@@ -130,9 +124,7 @@ public class Settings {
 
         languages = new LinkedHashMap<>();
 
-        try {
-
-            BufferedReader br = new BufferedReader(new FileReader(programPath + LANGUAGES_FILE));
+        try(BufferedReader br = new BufferedReader(new FileReader(programPath + LANGUAGES_FILE))) {
 
             String line;
             StringTokenizer tk;
@@ -157,7 +149,6 @@ public class Settings {
     }
 
     //SETTERS ANS GETTERS
-
 
     public void setOpenOnStartup(boolean openOnStartup) {
 

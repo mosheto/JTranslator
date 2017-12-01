@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1ee56f8-e0ce-461b-9b26-39bdf3de3818" name="Default" comment="modify About Panel">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/MouseManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/about.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/back.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Translator/about.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Translator/back.gif" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Translator_jar/Translator.jar" afterPath="$PROJECT_DIR$/out/artifacts/Translator_jar/Translator.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/About.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/About.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$1.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$2.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$3.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$4.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$5.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/translator/About.java" afterPath="$PROJECT_DIR$/src/com/translator/About.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/translator/SettingsGUI.java" afterPath="$PROJECT_DIR$/src/com/translator/SettingsGUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/translator/Settings.java" afterPath="$PROJECT_DIR$/src/com/translator/Settings.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,20 +32,17 @@
     </SUITE>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="About.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/translator/About.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="140" column="27" lean-forward="true" selection-start-line="140" selection-start-column="27" selection-end-line="140" selection-end-column="27" />
+            <state relative-caret-position="0">
+              <caret line="145" column="1" lean-forward="false" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#initComponents#0;class#About#0" expanded="false" />
-                <element signature="e#643#673#0" expanded="true" />
                 <element signature="e#1862#1863#0" expanded="true" />
                 <element signature="e#1910#1911#0" expanded="true" />
-                <element signature="e#2153#2286#0" expanded="true" />
-                <element signature="e#2285#2286#0" expanded="true" />
                 <element signature="e#5803#5804#0" expanded="true" />
                 <element signature="e#5858#5859#0" expanded="true" />
               </folding>
@@ -47,25 +50,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingsGUI.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SettingsGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/translator/SettingsGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-433">
-              <caret line="45" column="57" lean-forward="true" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+            <state relative-caret-position="458">
+              <caret line="45" column="57" lean-forward="false" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
               <folding>
                 <element signature="method#getKeyText#0;class#SettingsGUI#0" expanded="false" />
                 <element signature="docComment;method#initComponents#0;class#SettingsGUI#0" expanded="false" />
-                <element signature="e#2646#2676#0" expanded="true" />
                 <element signature="method#onSaveClicked#0;class#SettingsGUI#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="t.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/t.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="Settings.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/translator/Settings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+              <folding>
+                <element signature="method#Settings#0;class#Settings#0" expanded="false" />
+                <element signature="method#initProgramPathAndName#0;class#Settings#0" expanded="false" />
+                <element signature="method#getSettings#0;class#Settings#0" expanded="false" />
+                <element signature="method#defaultSettings#0;class#Settings#0" expanded="false" />
+                <element signature="method#saveSettings#0;class#Settings#0" expanded="false" />
+                <element signature="method#initLanguages#0;class#Settings#0" expanded="false" />
+                <element signature="method#setOpenOnStartup#0;class#Settings#0" expanded="false" />
+                <element signature="method#deleteStartupFile#0;class#Settings#0" expanded="false" />
+                <element signature="method#addStartupFile#0;class#Settings#0" expanded="false" />
+                <element signature="method#setRegValue#0;class#Settings#0" expanded="false" />
+                <element signature="method#deleteRegValue#0;class#Settings#0" expanded="false" />
+                <element signature="method#getLanguages#0;class#Settings#0" expanded="false" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -73,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/translator/Display.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="39" />
+              <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -114,10 +132,10 @@
         <option value="$PROJECT_DIR$/src/com/translator/Translator.java" />
         <option value="$PROJECT_DIR$/src/com/translator/MainFunctionality.java" />
         <option value="$PROJECT_DIR$/src/com/translator/Message.java" />
-        <option value="$PROJECT_DIR$/src/com/translator/Settings.java" />
         <option value="$PROJECT_DIR$/src/com/translator/About.java" />
         <option value="$USER_HOME$/Documents/NetBeansProjects/ADialog/src/TranslatorStuff/About.java" />
         <option value="$PROJECT_DIR$/src/com/translator/SettingsGUI.java" />
+        <option value="$PROJECT_DIR$/src/com/translator/Settings.java" />
       </list>
     </option>
   </component>
@@ -142,7 +160,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -150,6 +170,41 @@
             <path>
               <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
               <item name="Translator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Translator" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Translator" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Translator" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="Translator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Translator" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="Translator" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Translator" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="Translator" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="translator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
@@ -171,8 +226,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -387,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511935054300</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="modify About Panel">
+      <created>1511959156416</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1511959156416</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -404,20 +464,19 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.25052854" sideWeight="0.50208336" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.49791667" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1689546" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.49791667" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.122621566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1515625" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -430,6 +489,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -444,34 +504,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/translator/TranslateManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/translator/Translator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-          <folding>
-            <element signature="method#Translator#0;class#Translator#0" expanded="false" />
-            <element signature="method#init#0;class#Translator#0" expanded="false" />
-            <element signature="method#showTray#0;class#Translator#0" expanded="false" />
-            <element signature="method#loadImage#0;class#Translator#0" expanded="false" />
-            <element signature="method#onClosing#0;class#Translator#0" expanded="false" />
-            <element signature="method#resetAndRegProvider#0;class#Translator#0" expanded="false" />
-            <element signature="method#stop#0;class#Translator#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/translator/Display.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -630,47 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/translator/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="236" column="5" lean-forward="true" selection-start-line="236" selection-start-column="5" selection-end-line="236" selection-end-column="5" />
-          <folding>
-            <element signature="method#Settings#0;class#Settings#0" expanded="false" />
-            <element signature="method#initProgramPathAndName#0;class#Settings#0" expanded="false" />
-            <element signature="method#getSettings#0;class#Settings#0" expanded="false" />
-            <element signature="method#defaultSettings#0;class#Settings#0" expanded="false" />
-            <element signature="method#saveSettings#0;class#Settings#0" expanded="false" />
-            <element signature="method#initLanguages#0;class#Settings#0" expanded="false" />
-            <element signature="method#setOpenOnStartup#0;class#Settings#0" expanded="false" />
-            <element signature="method#deleteStartupFile#0;class#Settings#0" expanded="false" />
-            <marker date="1511935519770" expanded="false" signature="6363:7122" ph="{...}" />
-            <marker date="1511935519770" expanded="false" signature="7259:7461" ph="{...}" />
-            <marker date="1511935519770" expanded="false" signature="7560:8026" ph="{...}" />
-            <marker date="1511935519770" expanded="false" signature="8064:8075" ph=" { " />
-            <marker date="1511935519770" expanded="false" signature="8096:8102" ph=" }" />
-            <marker date="1511935519770" expanded="false" signature="8136:8147" ph=" { " />
-            <marker date="1511935519770" expanded="false" signature="8164:8170" ph=" }" />
-            <marker date="1511935519770" expanded="false" signature="8204:8215" ph=" { " />
-            <marker date="1511935519770" expanded="false" signature="8231:8237" ph=" }" />
-            <marker date="1511935519770" expanded="false" signature="8283:8294" ph=" { " />
-            <marker date="1511935519770" expanded="false" signature="8319:8325" ph=" }" />
-            <marker date="1511935519770" expanded="false" signature="8362:8373" ph=" { " />
-            <marker date="1511935519770" expanded="false" signature="8388:8394" ph=" }" />
-            <marker date="1511935519770" expanded="false" signature="8422:8433" ph=" { " />
-            <marker date="1511935519770" expanded="false" signature="8444:8450" ph=" }" />
-            <marker date="1511935519770" expanded="false" signature="8485:8496" ph=" { " />
-            <marker date="1511935519770" expanded="false" signature="8522:8528" ph=" }" />
-            <marker date="1511935519770" expanded="false" signature="8563:8574" ph=" { " />
-            <marker date="1511935519770" expanded="false" signature="8587:8593" ph=" }" />
-            <marker date="1511935519770" expanded="false" signature="8620:8631" ph=" { " />
-            <marker date="1511935519770" expanded="false" signature="8641:8647" ph=" }" />
-            <marker date="1511935519770" expanded="false" signature="8681:8692" ph=" { " />
-            <marker date="1511935519770" expanded="false" signature="8717:8722" ph=" }" />
-            <marker date="1511935519770" expanded="false" signature="8760:8886" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/translator/MainFunctionality.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
@@ -694,15 +690,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/about.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/about.jpg" />
     <entry file="file://$PROJECT_DIR$/src/com/translator/Display.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="39" />
+          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -711,7 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
           <caret line="142" column="42" lean-forward="false" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -720,23 +711,23 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/back.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/resources/back.gif" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/translator/About.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="140" column="27" lean-forward="true" selection-start-line="140" selection-start-column="27" selection-end-line="140" selection-end-column="27" />
+        <state relative-caret-position="0">
+          <caret line="145" column="1" lean-forward="false" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#initComponents#0;class#About#0" expanded="false" />
-            <element signature="e#643#673#0" expanded="true" />
             <element signature="e#1862#1863#0" expanded="true" />
             <element signature="e#1910#1911#0" expanded="true" />
-            <element signature="e#2153#2286#0" expanded="true" />
-            <element signature="e#2285#2286#0" expanded="true" />
             <element signature="e#5803#5804#0" expanded="true" />
             <element signature="e#5858#5859#0" expanded="true" />
           </folding>
@@ -745,13 +736,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/translator/SettingsGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-433">
-          <caret line="45" column="57" lean-forward="true" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+        <state relative-caret-position="458">
+          <caret line="45" column="57" lean-forward="false" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
           <folding>
             <element signature="method#getKeyText#0;class#SettingsGUI#0" expanded="false" />
             <element signature="docComment;method#initComponents#0;class#SettingsGUI#0" expanded="false" />
-            <element signature="e#2646#2676#0" expanded="true" />
             <element signature="method#onSaveClicked#0;class#SettingsGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2109">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/translator/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+          <folding>
+            <element signature="method#Settings#0;class#Settings#0" expanded="false" />
+            <element signature="method#initProgramPathAndName#0;class#Settings#0" expanded="false" />
+            <element signature="method#getSettings#0;class#Settings#0" expanded="false" />
+            <element signature="method#defaultSettings#0;class#Settings#0" expanded="false" />
+            <element signature="method#saveSettings#0;class#Settings#0" expanded="false" />
+            <element signature="method#initLanguages#0;class#Settings#0" expanded="false" />
+            <element signature="method#setOpenOnStartup#0;class#Settings#0" expanded="false" />
+            <element signature="method#deleteStartupFile#0;class#Settings#0" expanded="false" />
+            <element signature="method#addStartupFile#0;class#Settings#0" expanded="false" />
+            <element signature="method#setRegValue#0;class#Settings#0" expanded="false" />
+            <element signature="method#deleteRegValue#0;class#Settings#0" expanded="false" />
+            <element signature="method#getLanguages#0;class#Settings#0" expanded="false" />
           </folding>
         </state>
       </provider>
