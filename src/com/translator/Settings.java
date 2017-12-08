@@ -18,7 +18,7 @@ public class Settings {
     private String shortcut;
 
     private static final String SETTINGS_FILE = "settings.t";
-    private static final String LANGUAGES_FILE = "langs.t";
+    private static final String LANGUAGES_FILE = "/langs.t";
 
     //name and path of the jar file
     private String programName;
@@ -124,7 +124,9 @@ public class Settings {
 
         languages = new LinkedHashMap<>();
 
-        try(BufferedReader br = new BufferedReader(new FileReader(programPath + LANGUAGES_FILE))) {
+        try(BufferedReader br = new BufferedReader(new InputStreamReader(
+                Settings.class.getResourceAsStream(LANGUAGES_FILE)))
+        ) {
 
             String line;
             StringTokenizer tk;
@@ -220,7 +222,12 @@ public class Settings {
 
     // Windows related function to write value to start the program on startup
     private void setRegValue(String name, String value) {
-         Advapi32Util.registrySetStringValue(WinReg.HKEY_CURRENT_USER,
+
+        //32bit machines don't have the key path in current user
+        WinReg.HKEY root = System.getProperty("os.arch").contains("64") ? WinReg.HKEY_CURRENT_USER
+                                                                        : WinReg.HKEY_LOCAL_MACHINE;
+
+         Advapi32Util.registrySetStringValue(root,
                 "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
                 name,
                 value
@@ -230,8 +237,12 @@ public class Settings {
     // Windows related function to delete the value
     private void deleteRegValue(String name) {
 
+        //32bit machines don't have the key path in current user
+        WinReg.HKEY root = System.getProperty("os.arch").contains("64") ? WinReg.HKEY_CURRENT_USER
+                                                                        : WinReg.HKEY_LOCAL_MACHINE;
+
         boolean isValueExist = Advapi32Util.registryValueExists(
-                WinReg.HKEY_CURRENT_USER,
+                root,
                 "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
                 name);
 
@@ -239,7 +250,7 @@ public class Settings {
         if (!isValueExist) return;
 
         Advapi32Util.registryDeleteValue(
-                WinReg.HKEY_CURRENT_USER,
+                root,
                 "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
                 name
         );

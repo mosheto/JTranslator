@@ -51,6 +51,10 @@ public class Translator {
 
         //set up the display
         EventQueue.invokeLater(() ->{
+
+            //get the look and feel of the system
+            initLookAndFeel();
+
             display = new Display(settings, this);
             display.setIconImage(imgIcon);
 
@@ -69,6 +73,29 @@ public class Translator {
             });
         });
 
+    }
+
+    //get the look and feel of the system
+    private void initLookAndFeel() {
+        try {
+            // Set System L&F
+            UIManager.setLookAndFeel(
+                    UIManager.getSystemLookAndFeelClassName());
+        }
+        catch (UnsupportedLookAndFeelException | ClassNotFoundException
+                | InstantiationException | IllegalAccessException e) {
+
+            try {
+                UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+
+            } catch (ClassNotFoundException | InstantiationException
+                    | IllegalAccessException | UnsupportedLookAndFeelException e1) {
+                e1.printStackTrace();
+            }
+
+            System.out.println("can't load system look and feel system is not supported");
+            System.out.println("go back to crossPlatform look and feel.");
+        }
     }
 
     //method if SystemTray is supported shoe it

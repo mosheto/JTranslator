@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1ee56f8-e0ce-461b-9b26-39bdf3de3818" name="Default" comment="modify About Panel">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Translator/about.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Translator/back.gif" afterPath="" />
+    <list default="true" id="f1ee56f8-e0ce-461b-9b26-39bdf3de3818" name="Default" comment="make langs.t file as resource">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Translator_jar/langs.t" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Translator_jar/Translator.jar" afterPath="$PROJECT_DIR$/out/artifacts/Translator_jar/Translator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/About.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/About.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$1.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$2.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$3.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$4.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$5.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/Settings.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/Settings.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/Translator$1.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/Translator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/Translator.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/Translator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/translator/Settings.java" afterPath="$PROJECT_DIR$/src/com/translator/Settings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/translator/Translator.java" afterPath="$PROJECT_DIR$/src/com/translator/Translator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/langs.t" afterPath="$PROJECT_DIR$/resources/langs.t" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,15 +33,11 @@
       <file leaf-file-name="About.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/translator/About.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="762">
               <caret line="145" column="1" lean-forward="false" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#initComponents#0;class#About#0" expanded="false" />
-                <element signature="e#1862#1863#0" expanded="true" />
-                <element signature="e#1910#1911#0" expanded="true" />
-                <element signature="e#5803#5804#0" expanded="true" />
-                <element signature="e#5858#5859#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,7 +46,7 @@
       <file leaf-file-name="SettingsGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/translator/SettingsGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
+            <state relative-caret-position="722">
               <caret line="45" column="57" lean-forward="false" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
               <folding>
                 <element signature="method#getKeyText#0;class#SettingsGUI#0" expanded="false" />
@@ -64,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Settings.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Settings.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/translator/Settings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+            <state relative-caret-position="228">
+              <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
               <folding>
                 <element signature="method#Settings#0;class#Settings#0" expanded="false" />
                 <element signature="method#initProgramPathAndName#0;class#Settings#0" expanded="false" />
@@ -82,6 +75,26 @@
                 <element signature="method#setRegValue#0;class#Settings#0" expanded="false" />
                 <element signature="method#deleteRegValue#0;class#Settings#0" expanded="false" />
                 <element signature="method#getLanguages#0;class#Settings#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Translator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/translator/Translator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="132" column="54" lean-forward="false" selection-start-line="132" selection-start-column="54" selection-end-line="132" selection-end-column="54" />
+              <folding>
+                <element signature="method#Translator#0;class#Translator#0" expanded="false" />
+                <element signature="method#init#0;class#Translator#0" expanded="false" />
+                <element signature="e#1168#1864#0" expanded="false" />
+                <element signature="method#initLookAndFeel#0;class#Translator#0" expanded="false" />
+                <element signature="method#showTray#0;class#Translator#0" expanded="false" />
+                <element signature="method#loadImage#0;class#Translator#0" expanded="false" />
+                <element signature="method#onClosing#0;class#Translator#0" expanded="false" />
+                <element signature="method#resetAndRegProvider#0;class#Translator#0" expanded="false" />
+                <element signature="method#stop#0;class#Translator#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -129,12 +142,12 @@
         <option value="$PROJECT_DIR$/src/com/translator/Display.java" />
         <option value="$PROJECT_DIR$/settings.t" />
         <option value="$PROJECT_DIR$/out/production/Translator/settings.t" />
-        <option value="$PROJECT_DIR$/src/com/translator/Translator.java" />
         <option value="$PROJECT_DIR$/src/com/translator/MainFunctionality.java" />
         <option value="$PROJECT_DIR$/src/com/translator/Message.java" />
         <option value="$PROJECT_DIR$/src/com/translator/About.java" />
         <option value="$USER_HOME$/Documents/NetBeansProjects/ADialog/src/TranslatorStuff/About.java" />
         <option value="$PROJECT_DIR$/src/com/translator/SettingsGUI.java" />
+        <option value="$PROJECT_DIR$/src/com/translator/Translator.java" />
         <option value="$PROJECT_DIR$/src/com/translator/Settings.java" />
       </list>
     </option>
@@ -160,56 +173,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
               <item name="Translator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Translator" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Translator" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Translator" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="Translator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Translator" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="Translator" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Translator" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="Translator" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="translator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Translator" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Translator" type="b2602c69:ProjectViewProjectNode" />
@@ -236,17 +209,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/out/production/Translator" />
-      <recent name="$PROJECT_DIR$/out/production" />
-      <recent name="G:\projects\JAVA\Translator" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/out/production/Translator" />
       <recent name="G:\projects\JAVA\Translator\out\production\Translator" />
       <recent name="G:\projects\JAVA\Translator\out\artifacts\Translator_jar" />
       <recent name="G:\projects\JAVA\Translator" />
       <recent name="G:\projects\JAVA\Translator\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\projects\JAVA\Translator\resources" />
+      <recent name="$PROJECT_DIR$/out/production/Translator" />
+      <recent name="$PROJECT_DIR$/out/production" />
+      <recent name="G:\projects\JAVA\Translator" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -447,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511959156416</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="using try-with-resources">
+      <created>1512154115268</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1512154115268</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -471,7 +452,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.25052854" sideWeight="0.50208336" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.49791667" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.49791667" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.122621566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -500,11 +481,12 @@
     <MESSAGE value="Cleanup code" />
     <MESSAGE value="improve Message Box" />
     <MESSAGE value="modify About Panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify About Panel" />
+    <MESSAGE value="using try-with-resources" />
+    <option name="LAST_COMMIT_MESSAGE" value="using try-with-resources" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -602,21 +584,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/langs.t">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/io/FileReader.java" />
-    <entry file="jar://$PROJECT_DIR$/libs/jna-platform-4.2.1.jar!/com/sun/jna/platform/win32/Advapi32Util.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="729" column="19" lean-forward="true" selection-start-line="729" selection-start-column="19" selection-end-line="729" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/StringTokenizer.java" />
     <entry file="file://$PROJECT_DIR$/settings.t">
       <provider selected="true" editor-type-id="text-editor">
@@ -645,25 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="13" column="126" lean-forward="false" selection-start-line="13" selection-start-column="126" selection-end-line="13" selection-end-column="126" />
-          <folding>
-            <element signature="method#translate#0;class#TranslateManager#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/translator/Translator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="145" column="24" lean-forward="false" selection-start-line="145" selection-start-column="24" selection-end-line="145" selection-end-column="24" />
-          <folding>
-            <element signature="method#Translator#0;class#Translator#0" expanded="false" />
-            <element signature="method#init#0;class#Translator#0" expanded="false" />
-            <element signature="method#showTray#0;class#Translator#0" expanded="false" />
-            <element signature="method#loadImage#0;class#Translator#0" expanded="false" />
-            <element signature="method#onClosing#0;class#Translator#0" expanded="false" />
-            <element signature="method#resetAndRegProvider#0;class#Translator#0" expanded="false" />
-            <element signature="method#stop#0;class#Translator#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -682,23 +631,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="method#Message#0;class#Message#0" expanded="false" />
-            <element signature="method#setText#0;class#Message#0" expanded="false" />
-            <element signature="method#getTextWidth#0;class#Message#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/about.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/com/translator/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/NetBeansProjects/ADialog/src/TranslatorStuff/About.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
@@ -719,24 +655,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/translator/About.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="145" column="1" lean-forward="false" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#initComponents#0;class#About#0" expanded="false" />
-            <element signature="e#1862#1863#0" expanded="true" />
-            <element signature="e#1910#1911#0" expanded="true" />
-            <element signature="e#5803#5804#0" expanded="true" />
-            <element signature="e#5858#5859#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/translator/SettingsGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
+        <state relative-caret-position="722">
           <caret line="45" column="57" lean-forward="false" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
           <folding>
             <element signature="method#getKeyText#0;class#SettingsGUI#0" expanded="false" />
@@ -750,16 +671,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2109">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/jna-platform-4.2.1.jar!/com/sun/jna/platform/win32/Advapi32Util.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="729" column="49" lean-forward="true" selection-start-line="729" selection-start-column="49" selection-end-line="729" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/translator/About.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="762">
+          <caret line="145" column="1" lean-forward="false" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
           <folding>
-            <element signature="e#0#9136#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#initComponents#0;class#About#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/langs.t">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/translator/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/translator/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+        <state relative-caret-position="228">
+          <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
           <folding>
             <element signature="method#Settings#0;class#Settings#0" expanded="false" />
             <element signature="method#initProgramPathAndName#0;class#Settings#0" expanded="false" />
@@ -773,6 +726,24 @@
             <element signature="method#setRegValue#0;class#Settings#0" expanded="false" />
             <element signature="method#deleteRegValue#0;class#Settings#0" expanded="false" />
             <element signature="method#getLanguages#0;class#Settings#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/translator/Translator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="132" column="54" lean-forward="false" selection-start-line="132" selection-start-column="54" selection-end-line="132" selection-end-column="54" />
+          <folding>
+            <element signature="method#Translator#0;class#Translator#0" expanded="false" />
+            <element signature="method#init#0;class#Translator#0" expanded="false" />
+            <element signature="e#1168#1864#0" expanded="false" />
+            <element signature="method#initLookAndFeel#0;class#Translator#0" expanded="false" />
+            <element signature="method#showTray#0;class#Translator#0" expanded="false" />
+            <element signature="method#loadImage#0;class#Translator#0" expanded="false" />
+            <element signature="method#onClosing#0;class#Translator#0" expanded="false" />
+            <element signature="method#resetAndRegProvider#0;class#Translator#0" expanded="false" />
+            <element signature="method#stop#0;class#Translator#0" expanded="false" />
           </folding>
         </state>
       </provider>
