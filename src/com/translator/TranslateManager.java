@@ -23,12 +23,6 @@ class TranslateManager {
             Document doc = Jsoup.connect(url).get();
             Elements divs = doc.select("div");
 
-            // for debugging
-            /*System.out.println("--------------");
-            System.out.println(divs.get(2).text()); //the translation is on the third div
-            System.out.println(divs.get(2).attr("dir"));
-            System.out.println("--------------");*/
-
             //set the direction of the text
             dir = divs.get(2).attr("dir").equals("rtl") ? ComponentOrientation.RIGHT_TO_LEFT :
                                                                      ComponentOrientation.LEFT_TO_RIGHT;

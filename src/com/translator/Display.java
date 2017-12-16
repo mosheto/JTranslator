@@ -10,9 +10,9 @@ public class Display extends JFrame {
     //handle switch between panels
     private JPanel layouts;
 
-    public static final String APPLICATION_NAME = "Translator";
-    public static final String SETTINGS_GUI = "SettingsGUI";
-    public static final String ABOUT = "About";
+    //JPanels names
+    static final String SETTINGS_GUI = "SettingsGUI";
+    static final String ABOUT = "About";
 
     private Translator translator;
 
@@ -39,8 +39,7 @@ public class Display extends JFrame {
 
         this.setContentPane(layouts);
         this.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
-        this.setTitle(APPLICATION_NAME);
-        //setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+        this.setTitle(Translator.APPLICATION_NAME);
 
         //center the program in the screen
         int x = Toolkit.getDefaultToolkit().getScreenSize().width / 2 - WIDTH / 2;
@@ -51,7 +50,8 @@ public class Display extends JFrame {
         this.pack();
     }
 
-    public void show(String name) {
+    //Change the view to the panel specified by name
+    void show(String name) {
         ((CardLayout) layouts.getLayout()).show(layouts, name);
     }
 }

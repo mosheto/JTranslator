@@ -11,6 +11,10 @@ import java.io.IOException;
 
 public class Translator {
 
+    public static final Image APPLICATION_ICON;
+    public static final String APPLICATION_NAME = "Translator";
+    public static final String APPLICATION_VERSION = "v1.5";
+
     //for global keyListening
     private Provider p;
     private MainFunctionality listener;
@@ -21,13 +25,16 @@ public class Translator {
 
     //application display and Icon
     private Display display;
-    private Image imgIcon;
 
     //Settings
     private Settings settings;
 
     //translate Manager
     private TranslateManager translateManager;
+
+    static {
+        APPLICATION_ICON = loadImage("/t.png");
+    }
 
     public Translator() {
 
@@ -46,17 +53,17 @@ public class Translator {
         //the keyListener
         listener = new MainFunctionality(translateManager, settings);
 
-        p = Provider.getCurrentProvider(true);
-        resetAndRegProvider();
-
         //set up the display
-        EventQueue.invokeLater(() ->{
+        SwingUtilities.invokeLater(() ->{
+
+            p = Provider.getCurrentProvider(true);
+            resetAndRegProvider();
 
             //get the look and feel of the system
             initLookAndFeel();
 
             display = new Display(settings, this);
-            display.setIconImage(imgIcon);
+            display.setIconImage(APPLICATION_ICON);
 
             //is set visible to false on start up and the tray is supported
             //or true its the first time
@@ -72,19 +79,19 @@ public class Translator {
                 }
             });
         });
-
     }
 
-    //get the look and feel of the system
+    //get the LaF of the system
     private void initLookAndFeel() {
         try {
-            // Set System L&F
+            // Set System LaF
             UIManager.setLookAndFeel(
                     UIManager.getSystemLookAndFeelClassName());
         }
         catch (UnsupportedLookAndFeelException | ClassNotFoundException
                 | InstantiationException | IllegalAccessException e) {
 
+            //if the system doesn't have LaF get the crossPlatform LaF
             try {
                 UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
 
@@ -102,17 +109,16 @@ public class Translator {
     private void showTray() {
 
         systemTray = SystemTray.getSystemTray();
-        imgIcon = loadImage("/t.png");
-        trayIcon = new TrayIcon(imgIcon);
+        trayIcon = new TrayIcon(APPLICATION_ICON);
         trayIcon.setImageAutoSize(true);
 
         PopupMenu popupMenu = new PopupMenu();
 
         MenuItem exit = new MenuItem("Exit");
-        exit.addActionListener((e) -> stop());
+        exit.addActionListener(e -> stop());
 
         MenuItem open = new MenuItem("Open");
-        open.addActionListener((e) -> display.setVisible(true));
+        open.addActionListener(e -> display.setVisible(true));
 
         popupMenu.add(open);
         popupMenu.addSeparator();
@@ -120,7 +126,7 @@ public class Translator {
 
         trayIcon.setPopupMenu(popupMenu);
         trayIcon.setToolTip("Translator");
-        trayIcon.addActionListener((e) -> display.setVisible(true));
+        trayIcon.addActionListener(e -> display.setVisible(true));
 
         try {
             systemTray.add(trayIcon);
@@ -181,6 +187,10 @@ public class Translator {
             systemTray.remove(trayIcon);
 
         System.exit(0);
+    }
+
+    public Image getImgIcon() {
+        return APPLICATION_ICON;
     }
 
     //main method to start the application from

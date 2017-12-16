@@ -9,7 +9,8 @@ import java.awt.event.WindowEvent;
 import java.util.Arrays;
 import java.util.List;
 
-public class SettingsGUI extends javax.swing.JPanel  {
+//this class is build by netBeans
+class SettingsGUI extends javax.swing.JPanel  {
 
     private static final List<Integer> MODIFIERS = Arrays.asList(
             KeyEvent.VK_ALT,
@@ -26,7 +27,7 @@ public class SettingsGUI extends javax.swing.JPanel  {
     private Translator translator;
 
 
-    public SettingsGUI(Display display, Settings settings, Translator translator) {
+    SettingsGUI(Display display, Settings settings, Translator translator) {
         this.display = display;
         this.settings = settings;
         this.translator = translator;
@@ -43,7 +44,7 @@ public class SettingsGUI extends javax.swing.JPanel  {
 
         minimizeButton.setEnabled(SystemTray.isSupported());
 
-        validateShortcut.setVisible(false); //TODO delete
+        validateShortcut.setVisible(false);
 
         shortcutTextField.setEditable(false);
         shortcutTextField.setFocusTraversalKeysEnabled(false);
@@ -81,7 +82,9 @@ public class SettingsGUI extends javax.swing.JPanel  {
         if (MODIFIERS.contains(e.getKeyCode()))
             return null;
 
-        return KeyStroke.getKeyStrokeForEvent(e).toString().replaceAll("pressed ", "").replaceAll(" ", "+");
+        return KeyStroke.getKeyStrokeForEvent(e).toString()
+                .replaceAll("pressed ", "")
+                .replaceAll(" ", "+");
     }
 
 

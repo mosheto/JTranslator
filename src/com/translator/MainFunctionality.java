@@ -49,13 +49,14 @@ public class MainFunctionality implements HotKeyListener{
             return;
         }
 
+        if (message.isVisible()) message.setVisible(false);
         message.setOrientation(translateManager.getDir());
         message.setText(translation);
         message.pack();
         message.setVisible(true);
     }
 
-    public String getClipboardContents() {
+    private String getClipboardContents() {
 
         String result = "";
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();

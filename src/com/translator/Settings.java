@@ -5,12 +5,11 @@ import com.sun.jna.platform.win32.WinReg;
 
 import javax.swing.*;
 import java.io.*;
-import java.net.URL;
 import java.nio.file.Files;
-import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 
-public class Settings {
+class Settings {
 
     private boolean openOnStartup,
                     firstTime; //if this is the first time the user open the application
@@ -26,7 +25,7 @@ public class Settings {
 
     private Map<String, String> languages;
 
-    public Settings() {
+    Settings() {
         initProgramPathAndName();
         initLanguages();
         getSettings();
@@ -35,7 +34,7 @@ public class Settings {
     private void initProgramPathAndName() {
 
         //this line gets the path where this class was loaded
-        // its the same thing as the path for the whole program
+        //its the same thing as the path for the whole program
         programPath = this.getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
         programName = programPath.substring(programPath.lastIndexOf('/')+1); // it's like name.jar
 
@@ -90,7 +89,7 @@ public class Settings {
         //delete any registry value or startup file if exist from previous version
         if (System.getProperty("os.name").startsWith("Windows")) {
             //delete previous registry value if it exist
-            deleteRegValue(Display.APPLICATION_NAME);
+            deleteRegValue(Translator.APPLICATION_NAME);
         } else if (System.getProperty("os.name").startsWith("Linux")) {
             deleteStartupFile();
         }
@@ -102,8 +101,7 @@ public class Settings {
         shortcut = "ctrl+T";
     }
 
-
-    public void saveSettings() {
+    void saveSettings() {
         String heading = String.format("%-10s%-15s%-15s%s", "Startup", "src", "to", "shortcut");
         String options = String.format("%-10s%-15s%-15s%s", openOnStartup ? "on" : "off", src,  to, shortcut);
 
@@ -152,7 +150,7 @@ public class Settings {
 
     //SETTERS ANS GETTERS
 
-    public void setOpenOnStartup(boolean openOnStartup) {
+    void setOpenOnStartup(boolean openOnStartup) {
 
 
         if (System.getProperty("os.name").startsWith("Windows")) {
@@ -161,13 +159,12 @@ public class Settings {
             if (openOnStartup) {
 
                 String val = "\"" + programPath + programName + "\"";
-
-                setRegValue(Display.APPLICATION_NAME, val);
+                setRegValue(Translator.APPLICATION_NAME, val);
 
             //delete the registry value so it doesn't open the application on start up
             } else {
-                deleteRegValue(Display.APPLICATION_NAME);
-                System.out.println("Deleted registry value.");
+                deleteRegValue(Translator.APPLICATION_NAME);
+                System.out.println("registry value Deleted.");
             }
 
         } else if (System.getProperty("os.name").startsWith("Linux")) {
@@ -185,11 +182,10 @@ public class Settings {
     //Linux related function
     private void deleteStartupFile() {
 
-        String path = System.getProperty("user.home") + "/.config/autostart/" + Display.APPLICATION_NAME + ".desktop";
-        File startupFile = new File(path);
+        String path = System.getProperty("user.home") + "/.config/autostart/" + Translator.APPLICATION_NAME + ".desktop";
 
         try {
-            Files.deleteIfExists(startupFile.toPath());
+            Files.deleteIfExists(Paths.get(path));
         } catch (IOException e) {
             System.out.println("Something went wrong when trying to delete startup file");
             e.printStackTrace();
@@ -199,7 +195,7 @@ public class Settings {
     //Linux related function
     private void addStartupFile() {
 
-        String path = System.getProperty("user.home") + "/.config/autostart/" + Display.APPLICATION_NAME + ".desktop";
+        String path = System.getProperty("user.home") + "/.config/autostart/" + Translator.APPLICATION_NAME + ".desktop";
 
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))) {
 
@@ -215,7 +211,7 @@ public class Settings {
             bw.close();
 
         } catch (IOException e){
-            System.out.println("Something went wrong while writing " + Display.APPLICATION_NAME + ".desktop");
+            System.out.println("Something went wrong while writing " + Translator.APPLICATION_NAME + ".desktop");
             e.printStackTrace();
         }
     }
@@ -256,51 +252,52 @@ public class Settings {
         );
     }
 
-    public boolean isOpenOnStartup() {
+
+    boolean isOpenOnStartup() {
         return openOnStartup;
     }
 
-    public boolean isFirstTime() {
+    boolean isFirstTime() {
         return firstTime;
     }
 
 
-    public String getShortcut() {
+    String getShortcut() {
         return shortcut;
     }
 
-    public void setShortcut(String shortcut) {
+    void setShortcut(String shortcut) {
         this.shortcut = shortcut;
     }
 
 
-    public void setSrc(String src) {
+    void setSrc(String src) {
         this.src = src;
     }
 
-    public String getSrc() {
+    String getSrc() {
         return src;
     }
 
-    public String getEncodedSrc() {
+    String getEncodedSrc() {
         return languages.get(src);
     }
 
 
-    public void setTo(String to) {
+    void setTo(String to) {
         this.to = to;
     }
 
-    public String getTo() {
+    String getTo() {
         return to;
     }
 
-    public String getEncodedTo() {
+    String getEncodedTo() {
         return languages.get(to);
    }
 
 
-    public String[] getLanguages() {
+    String[] getLanguages() {
         Object[] keys = languages.keySet().toArray();
         return Arrays.copyOf(keys, keys.length, String[].class);
     }

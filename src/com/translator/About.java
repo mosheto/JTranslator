@@ -1,14 +1,12 @@
 package com.translator;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.Desktop;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import javax.swing.*;
 
+//this class is build by netBeans
 public class About extends JPanel {
 
     private Display display;
@@ -27,31 +25,32 @@ public class About extends JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private void initComponents() {
 
-        appName = new JLabel();
-        jLabel1 = new JLabel();
-        jLabel2 = new JLabel();
-        jLabel3 = new JLabel();
-        jLabel4 = new JLabel();
-        jLabel5 = new JLabel();
-        BackButton = new JButton();
-        link = new JLabel();
+        appName = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        BackButton = new javax.swing.JButton();
+        link = new javax.swing.JLabel();
 
-        appName.setFont(new Font("Tahoma", 1, 24)); // NOI18N
-        appName.setText("Translator");
+        appName.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        appName.setIcon(new ImageIcon(Translator.APPLICATION_ICON));
+        appName.setText(Translator.APPLICATION_NAME + " " + Translator.APPLICATION_VERSION);
 
-        jLabel1.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setText("Developed by:");
 
-        jLabel2.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("Mahmoud Mazary");
 
-        jLabel3.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setText("Coded by:");
 
-        jLabel4.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setText("Mohammad Shakhatreh");
 
-        jLabel5.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel5.setText("I Hope you find it useful");
 
         BackButton.setText("Back");
@@ -61,56 +60,57 @@ public class About extends JPanel {
             }
         });
 
-        link.setFont(new Font("Tahoma", 1, 11)); // NOI18N
+        link.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         link.setText("<html><a href=\"\">Github page for the project</a></html>");
-        link.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        link.addMouseListener(new MouseAdapter() {
-            public void mouseClicked(MouseEvent evt) {
+        link.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        link.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
                 linkClicked(evt);
             }
         });
 
-        GroupLayout layout = new GroupLayout(this);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
-                layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(appName)
+                                .addGap(78, 78, 78))
                         .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(layout.createSequentialGroup()
                                                 .addContainerGap()
                                                 .addComponent(BackButton))
                                         .addGroup(layout.createSequentialGroup()
                                                 .addGap(85, 85, 85)
-                                                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                                                        .addComponent(jLabel1)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                         .addComponent(jLabel3)
                                                         .addComponent(jLabel5)
-                                                        .addComponent(link, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(link, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(jLabel1)
                                                         .addGroup(layout.createSequentialGroup()
                                                                 .addGap(31, 31, 31)
-                                                                .addComponent(jLabel4))
-                                                        .addGroup(layout.createSequentialGroup()
-                                                                .addGap(12, 12, 12)
-                                                                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.TRAILING)
-                                                                        .addComponent(appName)
+                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addComponent(jLabel4)
                                                                         .addComponent(jLabel2))))))
-                                .addContainerGap(100, Short.MAX_VALUE))
+                                .addContainerGap(90, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
-                layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                        .addGroup(GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(34, 34, 34)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(46, 46, 46)
                                 .addComponent(appName)
-                                .addGap(30, 30, 30)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                                 .addComponent(jLabel1)
-                                .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jLabel2)
-                                .addGap(33, 33, 33)
+                                .addGap(18, 18, 18)
                                 .addComponent(jLabel3)
-                                .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jLabel4)
-                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                                .addComponent(link, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                .addGap(36, 36, 36)
+                                .addComponent(link, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel5)
                                 .addGap(34, 34, 34)
@@ -119,11 +119,11 @@ public class About extends JPanel {
         );
     }// </editor-fold>
 
-    private void BackClicked(ActionEvent evt) {
+    private void BackClicked(java.awt.event.ActionEvent evt) {
         this.display.show(Display.SETTINGS_GUI);
     }
 
-    private void linkClicked(MouseEvent evt) {
+    private void linkClicked(java.awt.event.MouseEvent evt) {
 
         try {
             URI githubPage = new URI("https://github.com/7modasha/Translator");
@@ -133,14 +133,15 @@ public class About extends JPanel {
         }
     }
 
+
     // Variables declaration - do not modify
-    private JButton BackButton;
-    private JLabel appName;
-    private JLabel jLabel1;
-    private JLabel jLabel2;
-    private JLabel jLabel3;
-    private JLabel jLabel4;
-    private JLabel jLabel5;
-    private JLabel link;
+    private javax.swing.JButton BackButton;
+    private javax.swing.JLabel appName;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel link;
     // End of variables declaration
 }
