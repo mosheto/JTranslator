@@ -7,6 +7,7 @@ import java.net.URISyntaxException;
 import javax.swing.*;
 
 //this class is build by netBeans
+//About.form is for netBeans
 public class About extends JPanel {
 
     private Display display;

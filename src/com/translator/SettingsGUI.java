@@ -113,7 +113,7 @@ class SettingsGUI extends javax.swing.JPanel  {
         validateShortcut = new javax.swing.JLabel();
 
         appName.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        appName.setText("Translator");
+        appName.setText(Translator.APPLICATION_NAME);
 
         tip1.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
         tip1.setText("Tip: to use the app just copy the content");

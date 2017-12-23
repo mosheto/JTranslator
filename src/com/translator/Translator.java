@@ -11,8 +11,8 @@ import java.io.IOException;
 
 public class Translator {
 
-    public static final Image APPLICATION_ICON;
-    public static final String APPLICATION_NAME = "Translator";
+    public static final Image APPLICATION_ICON = loadImage("/t.png");;
+    public static final String APPLICATION_NAME = "JTranslator";
     public static final String APPLICATION_VERSION = "v1.5";
 
     //for global keyListening
@@ -31,10 +31,6 @@ public class Translator {
 
     //translate Manager
     private TranslateManager translateManager;
-
-    static {
-        APPLICATION_ICON = loadImage("/t.png");
-    }
 
     public Translator() {
 
@@ -56,12 +52,6 @@ public class Translator {
         //set up the display
         SwingUtilities.invokeLater(() ->{
 
-            p = Provider.getCurrentProvider(true);
-            resetAndRegProvider();
-
-            //get the look and feel of the system
-            initLookAndFeel();
-
             display = new Display(settings, this);
             display.setIconImage(APPLICATION_ICON);
 
@@ -69,7 +59,10 @@ public class Translator {
             //or true its the first time
             if (!settings.isFirstTime() && SystemTray.isSupported())
                 display.setVisible(false);
-            else
+            else if (!settings.isFirstTime()) {
+                display.setVisible(true);
+                display.setState(Frame.ICONIFIED);
+            } else
                 display.setVisible(true);
 
             display.addWindowListener(new WindowAdapter() {
@@ -79,31 +72,11 @@ public class Translator {
                 }
             });
         });
+
+        p = Provider.getCurrentProvider(true);
+        resetAndRegProvider();
     }
 
-    //get the LaF of the system
-    private void initLookAndFeel() {
-        try {
-            // Set System LaF
-            UIManager.setLookAndFeel(
-                    UIManager.getSystemLookAndFeelClassName());
-        }
-        catch (UnsupportedLookAndFeelException | ClassNotFoundException
-                | InstantiationException | IllegalAccessException e) {
-
-            //if the system doesn't have LaF get the crossPlatform LaF
-            try {
-                UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
-
-            } catch (ClassNotFoundException | InstantiationException
-                    | IllegalAccessException | UnsupportedLookAndFeelException e1) {
-                e1.printStackTrace();
-            }
-
-            System.out.println("can't load system look and feel system is not supported");
-            System.out.println("go back to crossPlatform look and feel.");
-        }
-    }
 
     //method if SystemTray is supported shoe it
     private void showTray() {
@@ -125,7 +98,7 @@ public class Translator {
         popupMenu.add(exit);
 
         trayIcon.setPopupMenu(popupMenu);
-        trayIcon.setToolTip("Translator");
+        trayIcon.setToolTip(Translator.APPLICATION_NAME);
         trayIcon.addActionListener(e -> display.setVisible(true));
 
         try {
@@ -191,10 +164,5 @@ public class Translator {
 
     public Image getImgIcon() {
         return APPLICATION_ICON;
-    }
-
-    //main method to start the application from
-    public static void main(String[] args) {
-        new Translator();
     }
 }

@@ -1,6 +1,5 @@
 import com.translator.Translator;
 
-
 public class JTranslator {
 
     //main method to start the application from
