@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1ee56f8-e0ce-461b-9b26-39bdf3de3818" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Translator/settings.t" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Translator_jar/Translator.jar" afterPath="$PROJECT_DIR$/out/artifacts/Translator_jar/Translator.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/About.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/About.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/Display.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/Display.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/MainFunctionality.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/MainFunctionality.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/Settings.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/Settings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$1.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$2.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$3.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$4.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$5.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/SettingsGUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/TranslateManager.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/TranslateManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/Translator$1.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/Translator$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/com/translator/Translator.class" afterPath="$PROJECT_DIR$/out/production/Translator/com/translator/Translator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Translator/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/production/Translator/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/resources/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.t" afterPath="$PROJECT_DIR$/settings.t" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JTranslator.java" afterPath="$PROJECT_DIR$/src/JTranslator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/translator/About.java" afterPath="$PROJECT_DIR$/src/com/translator/About.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/translator/SettingsGUI.java" afterPath="$PROJECT_DIR$/src/com/translator/SettingsGUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/translator/Translator.java" afterPath="$PROJECT_DIR$/src/com/translator/Translator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SettingsGUI.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SettingsGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/translator/SettingsGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="96" column="4" lean-forward="false" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
+            <state relative-caret-position="532">
+              <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
               <folding>
                 <element signature="method#initByHand#0;class#SettingsGUI#0" expanded="false" />
                 <element signature="method#getKeyText#0;class#SettingsGUI#0" expanded="false" />
@@ -57,14 +39,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JTranslator.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JTranslator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JTranslator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="228">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <element signature="e#154#155#0" expanded="true" />
-                <element signature="e#186#187#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#341#342#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/translator/Translator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="method#loadImage#0;class#Translator#0" expanded="false" />
                 <element signature="method#onClosing#0;class#Translator#0" expanded="false" />
@@ -188,10 +170,10 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/resources/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/libs/jkeymaster-1.2.jar!/com/tulskiy/keymaster/x11/X11Provider.class" />
-        <option value="$PROJECT_DIR$/src/com/translator/SettingsGUI.java" />
         <option value="$PROJECT_DIR$/src/com/translator/About.java" />
         <option value="$PROJECT_DIR$/src/com/translator/Translator.java" />
         <option value="$PROJECT_DIR$/out/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/com/translator/SettingsGUI.java" />
         <option value="$PROJECT_DIR$/src/JTranslator.java" />
       </list>
     </option>
@@ -438,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512762284323</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=" change app intry point and remove system LaF and add About.form and changed the name of the app">
+      <created>1514014132558</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1514014132558</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -513,7 +502,8 @@
     <MESSAGE value="modify About Panel" />
     <MESSAGE value="using try-with-resources" />
     <MESSAGE value="make langs.t file as resource ,use system look and feel and fix windows x32 startup issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="make langs.t file as resource ,use system look and feel and fix windows x32 startup issue" />
+    <MESSAGE value=" change app intry point and remove system LaF and add About.form and changed the name of the app" />
+    <option name="LAST_COMMIT_MESSAGE" value=" change app intry point and remove system LaF and add About.form and changed the name of the app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -826,29 +816,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JTranslator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#154#155#0" expanded="true" />
-            <element signature="e#186#187#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/translator/Translator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="method#loadImage#0;class#Translator#0" expanded="false" />
             <element signature="method#onClosing#0;class#Translator#0" expanded="false" />
@@ -858,13 +829,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/translator/SettingsGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="96" column="4" lean-forward="false" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
+        <state relative-caret-position="532">
+          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding>
             <element signature="method#initByHand#0;class#SettingsGUI#0" expanded="false" />
             <element signature="method#getKeyText#0;class#SettingsGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JTranslator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
           </folding>
         </state>
       </provider>
