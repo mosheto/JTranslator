@@ -73,7 +73,7 @@ public class Translator {
             });
         });
 
-        p = Provider.getCurrentProvider(true);
+        p = Provider.getCurrentProvider(false);
         resetAndRegProvider();
     }
 
