@@ -1,4 +1,4 @@
-# Translator
+# JTranslator
 
 List of libraries used in the project:
 
