@@ -5,7 +5,7 @@ import javax.swing.*;
 
 public class Display extends JFrame {
 
-    public static final int WIDTH = 352, HEIGHT = 367;
+    public static final int WIDTH = 381, HEIGHT = 437;
 
     //handle switch between panels
     private JPanel layouts;
