@@ -35,6 +35,8 @@ jfx {
     // minimal requirement for jfxJar-task
     mainClass = 'JTranslator'
 
+    jfxMainAppJarName = "JTranslator.jar"
+
     // minimal requirement for jfxNative-task
     vendor = 'MM Corp.'
 

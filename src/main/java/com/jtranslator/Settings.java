@@ -16,8 +16,8 @@ class Settings {
     private String src, to;
     private String shortcut;
 
-    private static final String SETTINGS_FILE = "settings.t";
-    private static final String LANGUAGES_FILE = "/langs.t";
+    private static final String SETTINGS_FILE = "settings.jt";
+    private static final String LANGUAGES_FILE = "/langs.jt";
 
     //path of the exe or script file
     private String APP_HOME;
@@ -38,12 +38,12 @@ class Settings {
 
         //this is for Windows looks like C://path/to/program/
         if (System.getProperty("os.name").startsWith("Windows")) {
-            APP_HOME = APP_HOME.substring(1, APP_HOME.lastIndexOf('/')+1);
+            APP_HOME = APP_HOME.substring(1, APP_HOME.lastIndexOf('/'));
             APP_HOME = APP_HOME.replaceAll("/", "\\\\");
 
             //this is for Linux looks like /path/to/program/
         } else if (System.getProperty("os.name").startsWith("Linux")) {
-            APP_HOME = APP_HOME.substring(0, APP_HOME.lastIndexOf('/')+1);
+            APP_HOME = APP_HOME.substring(0, APP_HOME.lastIndexOf('/'));
         }
 
         //go back to the parent directory
