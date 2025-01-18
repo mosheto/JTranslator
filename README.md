@@ -14,3 +14,8 @@ and press your new one and click save
 Tested on Windows 10, 7 and Ubuntu
 
 I hope you find it useful
+
+## Buy me a Coffee: 
+BTC: bc1q2kqvggm552h0csyr0awa2zepdapxdqnacw0z5w
+
+![BTC](https://raw.githubusercontent.com/lcsig/API-Hooking/refs/heads/master/img/btc.png)
